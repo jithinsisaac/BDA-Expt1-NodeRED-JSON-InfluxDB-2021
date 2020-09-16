@@ -32,6 +32,15 @@ To encode & decode JSON messages (Semi-structed data) & To learn and implement t
 - Inject data into InfluxDB and plot charts & time series graphs of the injected data
 - Use the InfluxQL query language to insert & query data via Terminal
 
+### Final list of Deliverables for Expt 2 
+(Please attach necessary screenshots & video clips for the same)
+
+- JSON encoding & decoding using NodeRED
+- Node-RED UI dashboard for any application of your choice
+- Injecting of data into InfluxDB database using NodeRED
+- Any 5 operations from https://docs.influxdata.com/influxdb/v1.8/query_language/explore-data/ on InfluxDB database using the InfluxDB terminal shell
+- Any 5 functions from  https://docs.influxdata.com/influxdb/v1.8/query_language/functions/ on InfluxDB database using the InfluxDB terminal shell
+
 ### Procedure 
 - **ADD THE PROCEDURE THAT YOU FOLLOWED FOR COMPLETING THE EXPERIMENT HERE**
 
