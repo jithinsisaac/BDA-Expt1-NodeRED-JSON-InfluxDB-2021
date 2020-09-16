@@ -1,0 +1,67 @@
+[
+    {
+        "id": "53ebeaf2.ae0b14",
+        "type": "inject",
+        "z": "80622946.d12678",
+        "name": "Current Time",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 240,
+        "wires": [
+            [
+                "40d6225f.b2394c"
+            ]
+        ]
+    },
+    {
+        "id": "3c4478cb.14d188",
+        "type": "debug",
+        "z": "80622946.d12678",
+        "name": "Time HH:MM:SS",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "time",
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "40d6225f.b2394c",
+        "type": "function",
+        "z": "80622946.d12678",
+        "name": "timeConvert",
+        "func": "//create date object from timestamp injected in\nvar dt = new Date(msg.payload); \n\n//Get the month information out\nvar month = dt.getMonth() + 1;  \n\n//Create timestamp with only the time, no date, information\nmsg.date = \n     dt.getDate() + '-' + month + '-' + dt.getFullYear() \n     \nmsg.time = \n     dt.getHours() + ':' + dt.getMinutes() + ':' + dt.getSeconds()\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "3c4478cb.14d188",
+                "d78b9f56.5c6b9"
+            ]
+        ]
+    },
+    {
+        "id": "d78b9f56.5c6b9",
+        "type": "debug",
+        "z": "80622946.d12678",
+        "name": "Date DD-MM-YYYY",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "date",
+        "x": 540,
+        "y": 140,
+        "wires": []
+    }
+]
