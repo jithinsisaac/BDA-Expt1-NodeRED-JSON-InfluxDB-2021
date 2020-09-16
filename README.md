@@ -30,6 +30,7 @@ To encode & decode JSON messages (Semi-structed data) & To learn and implement t
   - https://jithinsisaac.github.io/posts/aws_influxdb/
 - Create, Inject & Decode JSON messages
 - Inject data into InfluxDB and plot charts & time series graphs of the injected data
+- Use the InfluxQL query language to insert & query data via Terminal
 
 ### Procedure 
 - **ADD THE PROCEDURE THAT YOU FOLLOWED FOR COMPLETING THE EXPERIMENT HERE**
