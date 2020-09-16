@@ -11,7 +11,7 @@ To encode & decode JSON messages (Semi-structed data) & To learn and implement t
 ### Tools used  
 - Software: 
   - Node-RED https://nodered.org/
-  - InfluxDB https://www.influxdata.com/
+  - InfluxDB https://docs.influxdata.com/influxdb/
 - Cloud: AWS EC2
 
 ### Experiment Outcome
@@ -26,6 +26,8 @@ To encode & decode JSON messages (Semi-structed data) & To learn and implement t
 
 - Spin up an AWS EC2 instance
 - Install Node-RED & InfluxDB on the EC2 instance
+  - https://jithinsisaac.github.io/posts/aws_nodered/
+  - https://jithinsisaac.github.io/posts/aws_influxdb/
 - Create, Inject & Decode JSON messages
 - Inject data into InfluxDB and plot charts & time series graphs of the injected data
 
