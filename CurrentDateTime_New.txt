@@ -1,0 +1,119 @@
+[
+    {
+        "id": "abba359a.83d908",
+        "type": "inject",
+        "z": "36d81b1.3d1c3e4",
+        "name": "Current Time",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "2",
+        "x": 250,
+        "y": 180,
+        "wires": [
+            [
+                "e6ac0a6.56cd1f8"
+            ]
+        ]
+    },
+    {
+        "id": "a2e048c.6be22b8",
+        "type": "debug",
+        "z": "36d81b1.3d1c3e4",
+        "name": "Time HH:MM:SS",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "time",
+        "x": 650,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "e6ac0a6.56cd1f8",
+        "type": "function",
+        "z": "36d81b1.3d1c3e4",
+        "name": "timeConvert",
+        "func": "//create date object from timestamp injected in\nvar dt = new Date(msg.payload); \n\n//Get the month information out\nvar month = dt.getMonth() + 1;  \n\n//Create timestamp with only the time, no date, information\nmsg.date = \n     dt.getDate() + '-' + month + '-' + dt.getFullYear() \n     \nmsg.time = \n     dt.getHours() + ':' + dt.getMinutes() + ':' + dt.getSeconds()\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "a2e048c.6be22b8",
+                "44f2dd89.562524",
+                "8b2ff45d.8b46b8",
+                "6b2d27b6.988cd8"
+            ]
+        ]
+    },
+    {
+        "id": "44f2dd89.562524",
+        "type": "debug",
+        "z": "36d81b1.3d1c3e4",
+        "name": "Date DD-MM-YYYY",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "date",
+        "x": 660,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "8b2ff45d.8b46b8",
+        "type": "ui_text",
+        "z": "36d81b1.3d1c3e4",
+        "group": "5d64f60c.877d08",
+        "order": 0,
+        "width": "2",
+        "height": "1",
+        "name": "",
+        "label": "Time",
+        "format": "{{msg.time}}",
+        "layout": "col-center",
+        "x": 670,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6b2d27b6.988cd8",
+        "type": "ui_text",
+        "z": "36d81b1.3d1c3e4",
+        "group": "5d64f60c.877d08",
+        "order": 0,
+        "width": "3",
+        "height": "1",
+        "name": "",
+        "label": "Date",
+        "format": "{{msg.date}}",
+        "layout": "col-center",
+        "x": 670,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5d64f60c.877d08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Current Date Time",
+        "tab": "f10106c6.d080a8",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f10106c6.d080a8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "DHT22_Arduino JSON",
+        "icon": "dashboard"
+    }
+]
