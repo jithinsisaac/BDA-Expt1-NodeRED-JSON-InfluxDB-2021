@@ -6,7 +6,7 @@ Course Coordinator: Mr. Jithin Isaac
 ### Laboratory Experiment No. 1
  
 ### Objective  
-To encode & decode JSON messages (Semi-structed data) & To learn and implement the InfluxDB Time Series Database used to measure IoT sensor data, via Node-RED in an AWS EC2 instance.
+To encode & decode JSON messages (Semi-structed data) & To learn and implement the InfluxDB Time Series NoSQL Database used to measure IoT sensor data, via Node-RED in an AWS EC2 instance.
 
 ### Tools used  
 - Software: 
