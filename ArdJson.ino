@@ -11,7 +11,7 @@ void loop()
       StaticJsonDocument<200> jsonDoc; 
       
       float temperature=30.5;
-      float humidity=70;
+      float humidity=80;
 
       jsonDoc["temp"] = temperature;
       jsonDoc["humi"] = humidity;
