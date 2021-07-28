@@ -11,7 +11,7 @@ To encode & decode JSON messages (Semi-structed data) & To learn and implement t
 ### Tools used  
 - Software: 
   - Node-RED v1.3 https://nodered.org/
-  - InfluxDB v1.8 https://docs.influxdata.com/influxdb/
+  - InfluxDB v1.8 https://docs.influxdata.com/influxdb/v1.8/
 - Cloud: AWS EC2
 
 ### Experiment Outcome
