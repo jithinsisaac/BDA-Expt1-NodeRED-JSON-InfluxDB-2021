@@ -3,15 +3,15 @@ Department of Electronics & Telecommunciation,
 Don Bosco Institute of Technology, Mumbai.  
 Course Coordinator: Mr. Jithin Isaac
 
-### Laboratory Experiment No. 2
+### Laboratory Experiment No. 1
  
 ### Objective  
 To encode & decode JSON messages (Semi-structed data) & To learn and implement the InfluxDB Time Series Database used to measure IoT sensor data, via Node-RED in an AWS EC2 instance.
 
 ### Tools used  
 - Software: 
-  - Node-RED https://nodered.org/
-  - InfluxDB https://docs.influxdata.com/influxdb/
+  - Node-RED v1.3 https://nodered.org/
+  - InfluxDB v1.8 https://docs.influxdata.com/influxdb/
 - Cloud: AWS EC2
 
 ### Experiment Outcome
@@ -32,7 +32,7 @@ To encode & decode JSON messages (Semi-structed data) & To learn and implement t
 - Inject data into InfluxDB and plot charts & time series graphs of the injected data
 - Use the InfluxQL query language to insert & query data via Terminal
 
-### Final list of Deliverables for Expt 2 
+### Final list of Deliverables for Expt 1 
 (Please attach necessary screenshots & video clips for the same)
 
 - JSON encoding & decoding using NodeRED
@@ -48,6 +48,6 @@ To encode & decode JSON messages (Semi-structed data) & To learn and implement t
 - **ADD SCREENSHOTS OF YOUR OUTPUT HERE**  
 
 ### Submission Details
-- **Submitted on** 20-9-2020
+- **Submitted on** 28-7-2021
 - **Submitted by** Mr/Ms. XYZ
 - **Roll No.** 111
